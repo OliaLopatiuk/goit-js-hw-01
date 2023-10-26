@@ -11,7 +11,12 @@ function onFormSubmit(event) {
   return alert("The fields can't be empty!")
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const user = {
+    login: email.value,
+    password: password.value,
+  }
+
+  console.log(user);
 
   event.currentTarget.reset();
 };
